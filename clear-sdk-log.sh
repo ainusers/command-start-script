@@ -9,5 +9,5 @@
 # 核心代码 (这里的时间，是指文件内容变更时间)
 DATE=`date -u +"%Y-%m-%d"`
 
-find /opt/sirius/sdk-logs -mtime +7 -name "*.log" -exec ls  {} \;   
-echo "$DATE 成功清除/opt/sirius/sdk-logs目录下7天前的日志文件"
+find /opt/analysis/sdk-logs -mtime +7 -name "*.log" -exec ls  {} \;   
+echo "$DATE 成功清除/opt/analysis/sdk-logs目录下7天前的日志文件"

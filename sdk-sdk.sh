@@ -57,13 +57,13 @@ if [ "$CMD" = "start" ]; then
       -Dcom.sun.management.jmxremote.authenticate=false \
       -Xms10g \
       -Xmx10g \
-      -Xloggc:/opt/sirius/sdk-logs/sirius-sdk-gc-$DATE".log" 2>&1 \
+      -Xloggc:/opt/analysis/sdk-logs/analysis-sdk-gc-$DATE".log" 2>&1 \
       -Dfile.encoding=UTF-8 \
       -XX:+HeapDumpOnOutOfMemoryError \
-      -XX:HeapDumpPath=/opt/sirius/sdk-logs/ \
+      -XX:HeapDumpPath=/opt/analysis/sdk-logs/ \
       -XX:MetaspaceSize=1g \
       -XX:MaxMetaspaceSize=1g \
-      -jar sirius-sdk.jar > /opt/sirius/sdk-logs/sirius-sdk-$DATE".log" 2>&1 &
+      -jar analysis-sdk.jar > /opt/analysis/sdk-logs/analysis-sdk-$DATE".log" 2>&1 &
    else
       echo "The current Process is already running"
       exit 0
@@ -84,13 +84,13 @@ elif [ "$CMD" = "restart" ]; then
       -Dcom.sun.management.jmxremote.authenticate=false \
       -Xms10g \
       -Xmx10g \
-      -Xloggc:/opt/sirius/sdk-logs/sirius-sdk-gc-$DATE".log" 2>&1 \
+      -Xloggc:/opt/analysis/sdk-logs/analysis-sdk-gc-$DATE".log" 2>&1 \
       -Dfile.encoding=UTF-8 \
       -XX:+HeapDumpOnOutOfMemoryError \
-      -XX:HeapDumpPath=/opt/sirius/sdk-logs/ \
+      -XX:HeapDumpPath=/opt/analysis/sdk-logs/ \
       -XX:MetaspaceSize=1g \
       -XX:MaxMetaspaceSize=1g \
-      -jar sirius-sdk.jar > /opt/sirius/sdk-logs/sirius-sdk-$DATE".log" 2>&1  &
+      -jar analysis-sdk.jar > /opt/analysis/sdk-logs/analysis-sdk-$DATE".log" 2>&1  &
    echo "The current process is start"
 fi
 
