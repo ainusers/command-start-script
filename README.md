@@ -1,4 +1,4 @@
-1. sdk-sdk.sh脚本使用教程
+# 1. sdk.sh脚本使用教程
 
 # 启动
 ./sdk.sh start
@@ -8,3 +8,8 @@
 
 # 重启
 ./sdk.sh restart
+
+# 2. clear-sdk-log.sh脚本使用教程
+
+# 启动
+当前脚本可以直接执行
