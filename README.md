@@ -20,4 +20,4 @@
 ## 3. split-sdk-log.sh脚本使用教程
 
 ### 启动
-当前脚本，如果做定时任务，则建议每天23:59执行 (0 0 1 * * bash /root/split-sdk-log.sh > /dev/null)
+当前脚本，如果做定时任务，则建议每天23:59执行 (59 23 * * * bash /root/split-sdk-log.sh > /dev/null)
