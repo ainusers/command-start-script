@@ -15,4 +15,9 @@
 ## 2. clear-sdk-log.sh脚本使用教程
 
 ### 启动
-当前脚本，如果做定时任务，则建议每月1号执行 (0 0 1 * * bash clear-sdk-log.sh)
+当前脚本，如果做定时任务，则建议每月1号执行 (0 0 1 * * bash /root/clear-sdk-log.sh > /dev/null)
+
+## 3. split-sdk-log.sh脚本使用教程
+
+### 启动
+当前脚本，如果做定时任务，则建议每天23:59执行 (0 0 1 * * bash /root/split-sdk-log.sh > /dev/null)
