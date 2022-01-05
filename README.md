@@ -9,7 +9,7 @@
 ### 重启
 ./sdk.sh restart
 
-### 特殊情况下，使用自定义jdk版本
+### 特殊情况下，使用自定义路径下jdk版本 (默认：/root/jdk-11.0.12)
 ./sdk.sh start custom
 
 ## 2. clear-sdk-log.sh脚本使用教程
